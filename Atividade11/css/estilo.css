@@ -1,0 +1,48 @@
+/* Comentário em CSS */
+/* Abaixo resetado configurações
+do navegador */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+header .logo {
+    /* margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;    */
+    margin: 5px 0px 5px 10px;
+    height: 35px;
+}
+header .empresa {
+    display: flex;  
+    background: #EEE;
+}
+header .nomeEmpresa {
+    font-size: 28px;
+    line-height: 45px;
+    padding-left: 15px;
+}
+nav {
+    background: #5b5757;
+    border-bottom: 1px solid #333;
+    height: 50px;
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    transition: 0.4s background;
+}
+nav ul li a:hover {
+    background-color: black;
+}
