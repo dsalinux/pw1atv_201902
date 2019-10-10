@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Comentário em CSS */
+/* Abaixo resetado configurações
+do navegador */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.corpo {
+    min-height: calc(100% - 40px);
+}
+header .logo {
+    /* margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;    */
+    margin: 5px 0px 5px 10px;
+    height: 35px;
+
+}
+header .empresa {
+    display: flex;
+    background: #38705e;
+}
+header .nomeEmpresa {
+    font-size: 28px;
+    line-height: 45px;
+    padding-left: 15px;
+}
+
+/* Formatação Barra de navegação */
+nav {
+    background: #20976f;
+    border-bottom: 1px solid #218563;
+    height: 50px;
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    transition: 0.4s background;
+}
+nav ul li a:hover {
+    background-color: black;
+}
+
+
+/* Formatação conteúdo principal */
+
+main {
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.produtos .produto {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 10px;;
+    background-color: #eee;
+    margin: 5px;
+    padding-bottom: 15px;
+}
+.produtos .imagem {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;;
+    background-color: #fff;
+    padding: 10px;
+}
+.produtos .imagem img {
+    width: 100%;
+}
+.produtos .produto .detalhes {
+    text-align: center;
+}
+.produtos .produto .detalhes .preco {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: darkgreen;
+    padding: 10px;
+}
+.produtos .produto a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #aa2211;
+    border-radius: 3px;
+    background: linear-gradient(#ff7788, #aa2211 40%, #661111 50% 80%, #ff99aa 150%);
+    padding: 5px 15px;
+}
+.produtos .produto a:hover {
+    background: linear-gradient(#ff99aa, #aa2211 50%, #661111 50% 60%, #ff99aa 120%);
+}
+.produtoDetalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtoDetalhes img {
+    height: 50vh;
+}
+.produtoDetalhes .descricao {
+    text-align: justify;
+}
+.produtoDetalhes .precoAprazo{
+    color: #ff6600
+}
+.produtoDetalhes .precoAvista{
+    color: #00aa44
+}
+.produtoDetalhes a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #11aa63;
+    border-radius: 3px;
+    background: linear-gradient(#77ffd6, #11aa1e 40%, #11661f 50% 80%, #99ffe0 150%);
+    padding: 5px 15px;
+    font-size: 24px;
+}
+.produtoDetalhes a:hover {
+    border: 1px solid #aa2311;
+    background: linear-gradient(#ff99aa, #aa2211 50%, #661111 50% 60%, #ff99aa 120%);
+}
+.contato {
+    width: 300px;
+    margin: 0 auto;
+}
+.contato input, .contato textarea{
+    display: block;
+    width: 300px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px -3px #333 inset;
+    margin-bottom: 10px;
+    outline: none;
+}
+.contato input:focus, .contato textarea:focus {
+    border: 1px solid #125388;
+}
+.contato button {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    border: 1px solid #114caa;
+    border-radius: 3px;
+    background: linear-gradient(#5c93eb, #1d5dc5 40%, #114caa 50% 80%, #568be0 150%);
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.contato button:hover {
+    background: linear-gradient(#a1c1f6, #2467d3 40%, #114caa 50% 80%, #6f9ee9 150%);
+}
+/* Formatação rodapé */
+
+footer {
+    background-color:#5b5757;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}

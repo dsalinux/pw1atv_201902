@@ -1,0 +1,23 @@
+.celular, .tablet, .notbook,
+.grandePC, .imprimir{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    body {background: cadetblue;}
+    .celular{display: block;}
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    body {background: chocolate;}
+    .tablet{display:block;font-size: 1.3em;}
+}
+@media screen and (min-width:801px) and (max-width:1000px){
+    body {background: crimson;}
+    .notbook{display:block;font-size: 1.6em;}
+}
+@media screen and (min-width:1001px){
+    body {background: darkslategrey;font-size: 2em;}
+    .grandePC{display:block;}
+}
+@media print{
+    .imprimir{display: block;}
+}
