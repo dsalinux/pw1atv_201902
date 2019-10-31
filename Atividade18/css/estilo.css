@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+::selection {
+    background-color: #2C6873;
+    color: white;
+}
+
+.cabecalho {
+    background-color: #1F7A8C;
+    padding-top: 5px;
+    height: 98px;
+}
+
+/*Menu*/
+.menu ul {
+    height: 40px;
+    list-style: none;
+    margin:0;
+    background-color: #175966;
+}
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+/*Submenu*/
+.menu ul li ul {
+    display: none;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    box-shadow: 0px 3px 3px -2px black;
+    z-index: 999;
+}
+.menu ul li ul li{
+    float: none;
+}
+/*Hover menu destaque*/
+.menu ul li:hover ul {
+    display: block;
+}
+.menu ul li a:hover {
+    background-color: #2C6873;
+}
+
+/*Banner*/
+.banner {
+    height: 35vh;
+    background-image: url("../imagens/web_banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*Corpo*/
+.corpo {
+    min-height: calc(100% - 143px);
+}
+.container {
+    width: 85vw;
+    margin: 0 auto;
+
+}
+.coluna1 {
+    width: 70%;
+    float: left;
+    box-shadow: 5px 0px 3px -6px #000;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.coluna1 p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+.coluna2 {
+    width: 30%;
+    float: left;
+}
+
+.lista-links {
+    list-style: none;
+    padding-left: 10px;
+}
+.lista-links a {
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #afafaf;
+}
+.lista-links a:hover {
+    background-color: #ccc;
+}
+
+/*Seleciona o último li da lista remove a borda do link */
+.lista-links li:last-child a {
+    border-bottom: 0px;
+}
+/*Configs do rodape*/
+.rodape {
+    background-color: #175966;
+    color: white;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+}
+.texto {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.imagemEsquerda {
+    float: left;
+}
+.imagemDireita {
+    float: right;
+}
+
+/*Correção de problemas de flutuação*/
+.clearfix {
+    content: "";
+    clear: both;
+}

@@ -1,0 +1,52 @@
+.quadro {
+    width: 300px;
+    height: 100px;
+    background: purple;
+    margin: 200px auto;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    animation-name: pendulo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chacoalhar {
+    from {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes pendulo {
+    from {
+        transform: rotate(40deg) translate(-200px, 0);
+    }
+    50% {
+        transform: rotate(-40deg) translate(200px, 0);
+    }
+    to {
+        transform: rotate(40deg) translate(-200px, 0);
+    }
+}
+
+.carregando {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
+    border-top: 6px solid red;
+    border-radius: 50%;
+    animation: girando 2s infinite ease;
+}
+
+@keyframes girando {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
